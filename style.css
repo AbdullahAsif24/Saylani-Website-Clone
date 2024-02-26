@@ -1,0 +1,32 @@
+/* ============Top Start========== */
+.top {
+    color: #666666;
+    padding: 0 6rem;
+    background-color: #eeeeee;
+    height: 1.85rem;
+}
+
+.info-top p {
+    margin: 0;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.info-top span {
+    font-size: medium;
+    padding: 0 0.5rem;
+}
+
+.info-top {
+    padding: 0 0.5rem;
+}
+
+.language {
+    height: 100%;
+    background-color: #ffffff;
+    width: 5rem;
+    text-align: center;
+    margin-right: 2rem;
+}
+/* =============Top End================ */
