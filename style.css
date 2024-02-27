@@ -51,6 +51,11 @@ p {
 nav {
     height: 5rem;
     margin: 0.5rem 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
 }
 
 .nav-links p {
@@ -58,6 +63,7 @@ nav {
     padding: 8px;
     font-size: 14px;
     cursor: pointer;
+    color: #000000d9;
 }
 
 .nav-links p:nth-child(1) {
@@ -115,3 +121,148 @@ nav {
 
 
 /* =============Navbar End================ */
+
+
+/* =============Hero Section Start================ */
+
+/* Text Animation */
+.animated-text {
+    font-size: 24px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.animated-text span {
+    position: relative;
+}
+
+.animated-text span::before {
+    content: "Youtuber";
+    color: #0d6db7;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #ffffff;
+    border-left: 2px solid #0d6db7;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid #0d6db7;
+    }
+}
+
+@keyframes words {
+
+    0%,
+    20% {
+        content: "daily Meals,";
+    }
+
+    21%,
+    40% {
+        content: "Monthly family support,";
+    }
+
+    41%,
+    60% {
+        content: "clean water,";
+    }
+
+    61%,
+    80% {
+        content: "Education,";
+    }
+
+    81%,
+    100% {
+        content: "healthcare and lot more.";
+    }
+
+    /* 81%,
+    100% {
+        content: "assistance to disaster affestees,";
+    }
+
+    81%,
+    100% {
+        content: "healthcare and lot more.";
+    } */
+}
+
+@keyframes typing {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 8px);
+    }
+}
+
+/* Text animation */
+
+.hero-img {
+    width: 38%;
+}
+
+.hero>div {
+    width: 546px;
+    padding-top: 5rem;
+}
+
+.hero>div>h3 {
+    font-size: 38px;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.hero>div>h3>span {
+    color: #8dc63f;
+}
+
+.hero>div>div,
+.hero>div>p {
+    padding-bottom: 0.6rem;
+    color: #000000d9;
+}
+
+.hero>div>button {
+    font-size: 12px;
+    gap: 7px;
+    padding: 0.7rem 2.5rem;
+    border-radius: 7px;
+    background-color: #ffffff;
+    color: #000000d9;
+}
+
+.hero {
+    margin: 2rem 5rem;
+}
+
+/* =============Hero Section End================ */
