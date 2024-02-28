@@ -6,6 +6,15 @@ p {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 /* ============Top Start========== */
 .top {
     color: #666666;
@@ -16,6 +25,7 @@ p {
 
 .top div {
     cursor: pointer;
+    flex-wrap: wrap;
 }
 
 .info-top p {
@@ -47,6 +57,10 @@ p {
 .logo {
     height: 3.4rem;
     padding-left: 5rem;
+}
+
+.hamburger {
+    display: none;
 }
 
 nav {
@@ -283,6 +297,7 @@ nav {
 
 .cards {
     margin: 3rem 0;
+    flex-flow: row wrap;
 }
 
 .card {
@@ -315,13 +330,15 @@ nav {
 
 
 .donate-card {
-    width: 356px;
+    width: 30%;
     height: 300px;
     cursor: pointer;
 }
 
 .donate-cards {
     margin: 3rem 0;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 /* .donate-card>img {
@@ -473,3 +490,143 @@ footer {
 }
 
 /* =============Footer End================ */
+
+
+
+/* =============Responsive Satart================ */
+
+@media only screen and (max-width: 1356px) {
+    .donate-cards {
+        justify-content: center !important;
+    }
+
+    .donate-card {
+        width: 340px;
+    }
+}
+
+
+@media only screen and (max-width: 1190px) {
+    .navbar {
+        justify-content: space-between !important;
+    }
+
+    .nav-info {
+        display: none !important;
+    }
+
+    .logo {
+        padding-left: 6.5rem;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-right: 8rem;
+        padding: 2px 5px;
+        font-size: 30px;
+        color: #666666;
+        border: 1px solid gray;
+        border-radius: 6px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+@media only screen and (max-width: 926px) {
+    .card {
+        width: 15rem;
+    }
+
+    .cards {
+        justify-content: center !important;
+        gap: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 860px) {
+    .hero-img {
+        display: none;
+    }
+
+    .hero {
+        margin: 2rem 7rem;
+        justify-content: flex-start !important;
+    }
+
+    .footer-bgcol {
+        height: 621px;
+    }
+}
+
+@media only screen and (max-width: 776px) {
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-btns {
+        justify-content: center;
+    }
+
+    .footer-bgcol {
+        height: 970px;
+    }
+}
+
+@media only screen and (max-width: 668px) {
+    .top {
+        padding: 0;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 478px) {
+    html {
+        font-size: 50%;
+    }
+
+    .navbar {
+        height: 10rem;
+    }
+
+    .logo {
+        padding: 0;
+        height: 5.4rem;
+    }
+
+    .hamburger {
+        margin: 0.5rem;
+        /* font-size: 30; */
+    }
+
+    .hero {
+        margin: 2rem 1rem;
+    }
+
+    .language {
+        width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 529px) {
+    .donate-card {
+        width: 100%;
+    }
+
+    .donate-cards {
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+
+
+
+/* =============Responsive End================ */
