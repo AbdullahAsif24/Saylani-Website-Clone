@@ -320,7 +320,7 @@ nav {
     cursor: pointer;
 }
 
-.donate-cards{
+.donate-cards {
     margin: 3rem 0;
 }
 
@@ -399,3 +399,77 @@ nav {
 }
 
 /* =============Services Section End================ */
+
+
+/* =============Footer Start================ */
+footer {
+    /* background-color: #424242; */
+    color: #ffffff;
+    padding: 3.14rem 7rem;
+    overflow: hidden;
+}
+
+.footer-bgcol {
+    position: absolute;
+    background-color: #424242;
+    height: 536px;
+    z-index: -2;
+    width: 100%;
+    translate: -7rem -3rem;
+}
+
+.footer-bgimg {
+    background-image: url(./Images/foter\ imh.png);
+    position: absolute;
+    height: 487px;
+    width: 100%;
+    filter: brightness(30%);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    transform: translate(-7rem);
+    z-index: -1;
+}
+
+.footer-top {
+    border-bottom: 1px solid gray;
+}
+
+.footer-btns>img {
+    border-radius: 8px;
+    margin-left: 0.5rem;
+}
+
+.footer-top>div>img {
+    padding-bottom: 2rem;
+}
+
+.footer-top>div>h1 {
+    font-size: 20px;
+    padding-bottom: 1rem;
+}
+
+.footer-top>div>p {
+    padding-bottom: 1rem;
+    font-size: 14px;
+}
+
+.footer-top>div:nth-child(4)>p {
+    padding: 0;
+}
+
+.footer-approved {
+    border-bottom: 1px solid gray;
+
+}
+
+.footer-IP {
+    font-size: 14px;
+    border-bottom: 1px solid gray;
+}
+
+.footer-copyright {
+    font-size: 14px;
+
+}
+
+/* =============Footer End================ */
